@@ -18,8 +18,9 @@ http://127.0.0.1:8000/
 # Acesso ao admin para excluir, editar, adicionar 
 
 - Criar usuario
+```
 python manage.py createsuperuser
-
+```
 ```
 http://127.0.0.1:8000/admin/
 ```
