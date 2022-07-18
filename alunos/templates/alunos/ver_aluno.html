@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<h1 class="mt-5">{{ aluno.nome }} {{ aluno.sobrenome }}</h1>
+<dl>
+    <dt>ID</dt>
+    <dd>{{ aluno.id }}</dd>
+
+    <dt>Telefone</dt>
+    <dd>{{ aluno.telefone }}</dd>
+
+    <dt>E-mail</dt>
+    <dd>{{ aluno.email }}</dd>
+
+    <dt>Data criação</dt>
+    <dd>{{ aluno.data_criacao|date:'d/m/y' }}</dd>
+
+    <dt>Categoria</dt>
+    <dd>{{ aluno.categoria }}</dd>
+
+    <dt>Descrição</dt>
+    <dd>
+        {{ aluno.descricao }}
+    </dd>
+</dl>
+
+{% endblock %}
